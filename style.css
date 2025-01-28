@@ -1,0 +1,120 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0f7fa; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 500px;
+    background: #daff06;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Header Styling */
+  h1 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Input and Button Styling */
+  .todo-input {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  #new-task {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #9a0c0c;
+    border-radius: 5px;
+  }
+  
+  #add-task-btn {
+    padding: 10px 20px;
+    background: #ff00dd;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #add-task-btn:hover {
+    background: #0056b3;
+  }
+  
+  /* Task List Styling */
+  #task-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .task .task-text {
+    flex: 1;
+  }
+  
+  .task .actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .task .edit-btn,
+  .task .delete-btn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .task .edit-btn {
+    background: #ffc107;
+    color: #fff;
+  }
+  
+  .task .delete-btn {
+    background: #2b26b9;
+    color: #fff;
+  }
+  
+  .task .edit-btn:hover {
+    background: #a8a2a7;
+  }
+  
+  .task .delete-btn:hover {
+    background: #c82333;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    #add-task-btn {
+      padding: 10px;
+    }
+  
+    .task {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  
